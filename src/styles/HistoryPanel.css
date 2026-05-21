@@ -1,0 +1,127 @@
+.history-panel {
+  padding: 24px;
+  max-height: 620px;
+  overflow: auto;
+}
+
+.history-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.history-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.history-panel::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(68, 53, 34, 0.18);
+}
+
+.history-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.history-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #111827;
+}
+
+.history-heading h2 {
+  margin: 0;
+  color: #111827;
+  font-size: 26px;
+  font-weight: 950;
+  letter-spacing: -0.03em;
+}
+
+.history-title > span {
+  min-width: 36px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  background: #f3eee6;
+  color: #111827;
+  font-size: 16px;
+  font-weight: 950;
+}
+
+.empty-state {
+  margin: 20px 0 0;
+  color: #6b543b;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.history-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.history-item {
+  padding: 12px;
+  border: 1px solid rgba(91, 68, 40, 0.14);
+  border-radius: 10px;
+  background: rgba(255, 253, 248, 0.88);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.history-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(42, 31, 20, 0.08);
+}
+
+.history-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.history-item-top strong {
+  color: #111827;
+  font-size: 15px;
+  font-weight: 950;
+}
+
+.history-item-top span {
+  color: #111827;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.mini-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.bet-pill {
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding: 8px 12px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.bet-up {
+  background: #eef7f1;
+  color: #0e5f3e;
+}
+
+.bet-down {
+  background: #fdebea;
+  color: #c81921;
+}

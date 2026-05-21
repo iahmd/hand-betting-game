@@ -1,0 +1,48 @@
+.page {
+  min-height: 100vh;
+  padding: 28px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #9a5f22;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.primary-button,
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  border-radius: 16px;
+  padding: 13px 20px;
+  font-weight: 900;
+  cursor: pointer;
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease,
+    filter 150ms ease;
+}
+
+.primary-button {
+  background: #173d2f;
+  color: white;
+  box-shadow: 0 8px 18px rgba(23, 61, 47, 0.2);
+}
+
+.secondary-button {
+  background: #fffaf3;
+  color: #173d2f;
+  border: 1px solid #dfccb0;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.03);
+}

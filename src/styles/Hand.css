@@ -1,0 +1,13 @@
+.hand-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(118px, 1fr));
+  gap: 24px;
+  margin-top: 16px;
+}
+
+@media (max-width: 900px) {
+  .hand-grid {
+    grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
+    gap: 14px;
+  }
+}
